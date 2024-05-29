@@ -1,0 +1,56 @@
+{
+  "name": "api-tester",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist-electron/main/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit",
+    "dev": "vite",
+    "build:dev": "typecheck && vite build --mode development && electron-builder",
+    "build:tst": "typecheck && vite build --mode staging && electron-builder",
+    "build": "typecheck && vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@aws-amplify/core": "^6.3.1",
+    "@aws-sdk/signature-v4": "^3.374.0",
+    "@mdi/js": "^7.4.47",
+    "@vueuse/core": "^10.9.0",
+    "aws-amplify": "^6.3.4",
+    "mdi-vue": "^3.0.13",
+    "nanoid": "^5.0.7",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@types/node": "^20.12.12",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "electron": "^30.0.5",
+    "electron-builder": "^24.13.3",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-log": "^5.1.4",
+    "electron-store": "^9.0.0",
+    "electron-updater": "^6.1.8",
+    "eslint": "^9.2.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.9.0",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
+    "unplugin-vue-router": "^0.8.6",
+    "vite": "^5.2.0",
+    "vite-plugin-electron": "^0.28.7",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "vue-tsc": "^2.0.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

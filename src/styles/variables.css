@@ -1,0 +1,80 @@
+:root {
+    color-scheme: light dark;
+
+    --app-header-size-default: 64px;
+    --app-header-size-comfortable: 56px;
+    --app-header-size-compact: 48px;
+    --app-nav-size-default: 256px;
+    --app-nav-size-compact: 56px;
+
+    --app-theme-background: 18, 18, 18;
+    --app-theme-on-background: 255, 255, 255;
+    --app-theme-background-overlay-multiplier: 1;
+    --app-theme-surface: 33, 33, 33;
+    --app-theme-on-surface: 255, 255, 255;
+    --app-high-emphasis-opacity: 1;
+    --app-medium-emphasis-opacity: .7;
+    --app-btn-size: 1.125rem;
+    --app-hover-opacity: .04;
+
+    --app-theme-overlay-multiplier: 1;
+    --app-theme-primary-overlay-multiplier: 2;
+    --app-theme-primary: 33, 150, 243;
+    --app-on-theme-primary: 255, 255, 255;
+    --app-theme-surface-light: 66, 66, 66;
+    --app-on-theme-surface-light: 255, 255, 255;
+
+    --app-border-color: 255, 255, 255;
+    --app-border-opacity: .12;
+
+    --app-theme-error: 207, 102, 121;
+    --app-theme-error-overlay-multiplier: 2;
+    --app-theme-on-error: 255, 255, 255;
+    --app-theme-info: 33, 150, 243;
+    --app-theme-info-overlay-multiplier: 1;
+    --app-theme-on-info: 255, 255, 255;
+    --app-theme-success: 76, 175, 80;
+    --app-theme-success-overlay-multiplier: 1;
+    --app-theme-on-success: 255, 255, 255;
+    --app-theme-warning: 251, 140, 0;
+    --app-theme-warning-overlay-multiplier: 1;
+    --app-theme-on-warning: 255, 255, 255;
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --app-theme-background: 255, 255, 255;
+        --app-theme-on-background: 0, 0, 0;
+        --app-theme-background-overlay-multiplier: 1;
+        --app-theme-surface: 255, 255, 255;
+        --app-theme-on-surface: 0, 0, 0;
+        --app-high-emphasis-opacity: .87;
+        --app-medium-emphasis-opacity: .6;
+        --app-btn-size: 1.125rem;
+        --app-hover-opacity: .04;
+
+        --app-theme-overlay-multiplier: 1;
+        --app-theme-primary-overlay-multiplier: 2;
+        --app-theme-primary: 24, 103, 192;
+        --app-on-theme-primary: 255,255,255;
+        --app-theme-surface-light: 238, 238, 238;
+        --app-on-theme-surface-light: 255,255,255;
+
+        --app-border-color: 0, 0, 0;
+        --app-border-opacity: .12;
+
+        --app-theme-error: 176, 0, 32;
+        --app-theme-error-overlay-multiplier: 2;
+        --app-theme-on-error: 255, 255, 255;
+        --app-theme-info: 33, 150, 243;
+        --app-theme-info-overlay-multiplier: 1;
+        --app-theme-on-info: 255, 255, 255;
+        --app-theme-success: 76, 175, 80;
+        --app-theme-success-overlay-multiplier: 1;
+        --app-theme-on-success: 255, 255, 255;
+        --app-theme-warning: 251, 140, 0;
+        --app-theme-warning-overlay-multiplier: 1;
+        --app-theme-on-warning: 255, 255, 255;
+    }
+  }

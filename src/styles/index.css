@@ -1,0 +1,28 @@
+@import url('./reset.css');
+@import url('./variables.css');
+@import url('./classes/index.css');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+  color: rgba(var(--app-theme-on-background), var(--app-high-emphasis-opacity));
+  background-color: rgb(var(--app-theme-background));
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.text-primary {
+  color: rgb(var(--app-theme-primary)) !important;
+}
+.bg-primary {
+  --app-theme-overlay-multiplier: var(--app-theme-primary-overlay-multiplier);
+  background-color: rgb(var(--app-theme-primary)) !important;
+  color: rgb(var(--app-theme-on-primary)) !important;
+}
