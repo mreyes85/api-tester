@@ -4,6 +4,15 @@ export const isNumber = (value: any): value is number => typeof value === 'numbe
 export const isArray = (value: any): value is Array<any> => Array.isArray(value)
 export const isObject = (value: any): value is Object => typeof value === 'object' && value !== null
 export const hasKey = <T>(obj: T, key: PropertyKey): key is keyof T => Object.prototype.hasOwnProperty.call(obj, key)
+type NonEmpty<T> = Exclude<T, {}>
+export const hasValues = <T>(value: T): value is NonEmpty<T> => (isObject(value)&&Object.keys(value).length!==0)
+
+export const numberToArray = (n: number, start:number = 1): number[] => {
+    let result: number[] = []
+    if (!n) return result
+    for (let index=0; index<n; index++) result.push(start + index)
+    return result
+}
 
 export const lazy = (callback: Function, timeout: NodeJS.Timeout) => {
     if (!timeout) timeout = setTimeout(() => { 

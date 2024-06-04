@@ -7,6 +7,10 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Api: typeof import('./components/Api/Index.vue')['default']
+    ApiCollections: typeof import('./components/Api/Collections.vue')['default']
+    ApiContent: typeof import('./components/Api/Content.vue')['default']
+    AWSContent: typeof import('./components/AWS/Content.vue')['default']
     AWSLogin: typeof import('./components/AWS/Login.vue')['default']
     copy: typeof import('./components/Layout/Header copy.vue')['default']
     DirectiveRipple: typeof import('./components/Directive/Ripple.vue')['default']
@@ -27,6 +31,9 @@ declare module 'vue' {
     LayoutContent: typeof import('./components/Layout/Content.vue')['default']
     LayoutElementButton: typeof import('./components/Layout/Element/Button.vue')['default']
     LayoutFooter: typeof import('./components/Layout/Footer.vue')['default']
+    LayoutGrid: typeof import('./components/Layout/Grid/index.vue')['default']
+    LayoutGridContent: typeof import('./components/Layout/Grid/Content.vue')['default']
+    LayoutGridGutter: typeof import('./components/Layout/Grid/Gutter.vue')['default']
     LayoutHeader: typeof import('./components/Layout/Header.vue')['default']
     LayoutNav: typeof import('./components/Layout/Nav.vue')['default']
     LayoutNavIcon: typeof import('./components/Layout/NavIcon.vue')['default']

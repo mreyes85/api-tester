@@ -13,7 +13,7 @@
 </script>
 
 <template>
-    <api-collection />
+    <api />
 </template>
 
 <style scoped>
