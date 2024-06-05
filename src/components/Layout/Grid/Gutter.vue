@@ -4,7 +4,7 @@ const props = defineProps<{
 }>()
 
 const gutterClasses = {
-    [`${props.direction}-gutter`]: true
+    [`app-${props.direction}-gutter`]: true
 }
 </script>
 
@@ -13,14 +13,14 @@ const gutterClasses = {
 </template>
 
 <style scoped>
-.vertical-gutter, .horizontal-gutter{
+.app-vertical-gutter, .app-horizontal-gutter{
     background-color: rgba(var(--app-theme-on-background), var(--app-medium-emphasis-opacity));
 }
-.vertical-gutter {
+.app-vertical-gutter {
     grid-area: 1 / 2 / 4 / 2;
     cursor: col-resize;
 }
-.horizontal-gutter {
+.app-horizontal-gutter {
     grid-area: 2 / 1 / 2 / 4;
     cursor: row-resize;
 }

@@ -37,6 +37,7 @@ declare module 'vue' {
     LayoutHeader: typeof import('./components/Layout/Header.vue')['default']
     LayoutNav: typeof import('./components/Layout/Nav.vue')['default']
     LayoutNavIcon: typeof import('./components/Layout/NavIcon.vue')['default']
+    LayoutTabs: typeof import('./components/Layout/Tabs/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
